@@ -41,7 +41,8 @@ function getWeather(e) {
 
       `;
       cityInput.value='';
-    })
+    }).catch(error=>
+      alert("Error: No such city found"))
   }   
 }
 
@@ -65,5 +66,6 @@ function getWeatherBtn(){
 
     `;
     cityInput.value='';
-  })
+  }).catch(error=>
+    alert("Error: No such city found"))
 }
